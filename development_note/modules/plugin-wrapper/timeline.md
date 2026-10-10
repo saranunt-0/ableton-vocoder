@@ -33,7 +33,7 @@ same engine ships as `Vintage Vocoder` (instrument, voice via sidechain) and
       both expose 1 event input bus
 - [x] Standalone UI screenshot under Xvfb (`docs/images/vintage-vocoder-ui.png`)
 - [ ] Steinberg `validator` (not bundled with pluginval)
-- [ ] macOS AU (auval) and Windows build: CI only
+- [x] macOS AU (auval) and Windows/macOS VST3 (pluginval): passed in CI run 38023467335
 
 ### Unverified Items (need Ableton on the user's machine)
 - [ ] Instrument: MIDI track + Sidechain = Vocal track → vocoder speaks. Expected: the
