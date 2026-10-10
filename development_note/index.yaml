@@ -1,0 +1,19 @@
+# development_note/index.yaml
+last_updated: "2026-10-10"
+modules:
+  - name: vocoder-dsp
+    path: modules/vocoder-dsp/timeline.md
+    description: "JUCE-free DSP: filter bank, envelope followers, carrier synth, unvoiced/air paths, ensemble, level calibration"
+  - name: plugin-wrapper
+    path: modules/plugin-wrapper/timeline.md
+    description: "JUCE processor/editor, instrument vs FX builds, VST3 sidechain bus type, pluginval results"
+  - name: ampero-routing
+    path: modules/ampero-routing/timeline.md
+    description: "Hotone Ampero II Stage USB routing investigation (backing track audible but not recordable)"
+  - name: ci
+    path: modules/ci/timeline.md
+    description: "GitHub Actions builds for macOS/Windows/Linux, pluginval/auval, packaging"
+standalone:
+  - name: architecture
+    path: architecture.md
+    description: "Signal flow, design decisions, base-code evaluation"

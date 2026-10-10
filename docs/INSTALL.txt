@@ -1,0 +1,26 @@
+VINTAGE VOCODER - INSTALL
+=========================
+
+Two plugins are included. They sound the same; they plug into Ableton differently:
+  Vintage Vocoder     instrument. Goes on a MIDI track; voice comes in via Sidechain.
+  Vintage Vocoder FX  audio effect. Goes on the vocal track; MIDI comes in via "MIDI To".
+See docs/ableton-setup.md in the repository for step-by-step routing.
+
+macOS
+-----
+  VST3:  copy the .vst3 bundles to      ~/Library/Audio/Plug-Ins/VST3/
+  AU:    copy the .component bundles to ~/Library/Audio/Plug-Ins/Components/
+  The builds are not notarised, so remove the download quarantine once (Terminal):
+      xattr -dr com.apple.quarantine ~/Library/Audio/Plug-Ins/VST3/Vintage*.vst3
+      xattr -dr com.apple.quarantine ~/Library/Audio/Plug-Ins/Components/Vintage*.component
+  The Standalone "Vintage Vocoder FX.app" runs without a DAW (mic in + MIDI keyboard).
+
+Windows
+-------
+  Copy the .vst3 folders to   C:\Program Files\Common Files\VST3\
+  "Vintage Vocoder FX.exe" is the standalone app.
+
+Ableton Live
+------------
+  Preferences > Plug-Ins: enable "Use VST3 Plug-in System Folders" (and "Use Audio Units" on macOS),
+  then press Rescan. The plugins appear under Plug-Ins > saranunt.
